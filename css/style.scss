@@ -52,7 +52,7 @@ em {
 
 .main--container {
     background-color: $Background--Very-Dark-Blue;
-    background-image: url(img/bg-mobile.png);
+    background-image: url(/images/bg-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -165,7 +165,7 @@ em {
 
 .footer {
     padding: 2em;
-    background-color: $Background--Very-Dark-Blue;
+    background-color: $Background--Dark-Blue;
     max-width: 1440px;
     margin: 0 auto;
     &__text {
@@ -197,7 +197,7 @@ em {
 @media (min-width: 900px) {
 
     .main--container {
-        background-image: url(img/bg-desktop.png);
+        background-image: url(/images/bg-desktop.png);
         background-size: 100% 50%;
         background-position: bottom right;
     }
