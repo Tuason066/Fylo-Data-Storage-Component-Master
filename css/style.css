@@ -34,7 +34,7 @@ em {
 
 .main--container {
   background-color: #0c122c;
-  background-image: url(images/bg-mobile.png);
+  background-image: url(/images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
@@ -59,7 +59,7 @@ em {
 
 .main__content {
   background-color: #1d2c67;
-  padding: 2.5em;
+  padding: 3em;
   border-radius: 10px 9rem 10px 10px;
 }
 
@@ -86,7 +86,7 @@ em {
 
 .storage {
   background-color: #1d2c67;
-  padding: 2.5em;
+  padding: 3em;
   margin-top: 1rem;
   border-radius: 10px;
   position: relative;
@@ -205,7 +205,7 @@ em {
 
 @media (min-width: 900px) {
   .main--container {
-    background-image: url(images/bg-desktop.png);
+    background-image: url(/images/bg-desktop.png);
     background-size: 100% 50%;
     background-position: bottom right;
   }
@@ -216,17 +216,19 @@ em {
   }
   .main__content {
     margin-right: 1em;
-  }
-  .main > * {
-    width: 50%;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
+    width: 40%;
   }
   .storage {
     margin-left: 1em;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    width: 60%;
   }
   .storage__text {
     text-align: left;
