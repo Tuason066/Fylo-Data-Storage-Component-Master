@@ -34,7 +34,7 @@ em {
 
 .main--container {
   background-color: #0c122c;
-  background-image: url(/img/bg-mobile.png);
+  background-image: url(img/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: -webkit-box;
@@ -168,6 +168,7 @@ em {
   font-weight: 700;
   margin-left: .5em;
   font-size: 1rem;
+  color: #dddbff;
 }
 
 .footer {
@@ -204,7 +205,7 @@ em {
 
 @media (min-width: 900px) {
   .main--container {
-    background-image: url(/img/bg-desktop.png);
+    background-image: url(img/bg-desktop.png);
     background-size: 100% 50%;
     background-position: bottom right;
   }
