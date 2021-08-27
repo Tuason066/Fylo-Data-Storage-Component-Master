@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+em {
+  color: #dddbff;
+  font-weight: 700;
+}
+
+.main--container {
+  background-color: #0c122c;
+  background-image: url(/img/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 85%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.main__content {
+  background-color: #1d2c67;
+  padding: 2.5em;
+  border-radius: 10px 9rem 10px 10px;
+}
+
+.title {
+  margin-bottom: 2em;
+}
+
+.btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-item {
+  background-color: #0c122c;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.btn-item + .btn-item {
+  margin-left: 1em;
+}
+
+.storage {
+  background-color: #1d2c67;
+  padding: 2.5em;
+  margin-top: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.storage__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #848794;
+}
+
+.storage__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.storage__amount--text {
+  color: #dddbff;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.scale {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #0c122c;
+  border-radius: 50px;
+  padding: .2em;
+  margin: 1em 0 .5em 0;
+}
+
+.scale__amount {
+  width: 70%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 50px;
+  padding: 1.5px;
+}
+
+.scale__indicator {
+  height: 100%;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.bubble {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 71.8px);
+  -webkit-transform: translateY(34.5px);
+          transform: translateY(34.5px);
+}
+
+.bubble__text {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #0c122c;
+}
+
+.bubble__span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 700;
+  margin-left: .5em;
+  font-size: 1rem;
+}
+
+.footer {
+  padding: 2em;
+  background-color: #0c122c;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  text-align: center;
+  color: #fff;
+  font-size: .9rem;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer__link {
+  color: #848794;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+@media (min-width: 700px) {
+  .main {
+    width: 80%;
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main--container {
+    background-image: url(/img/bg-desktop.png);
+    background-size: 100% 50%;
+    background-position: bottom right;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__content {
+    margin-right: 1em;
+  }
+  .main > * {
+    width: 50%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .storage {
+    margin-left: 1em;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .storage__text {
+    text-align: left;
+  }
+  .storage__amount {
+    margin: 0;
+  }
+  .bubble {
+    bottom: unset;
+    top: 0px;
+    left: unset;
+    right: 2.5em;
+    -webkit-transform: translateY(-34.5px);
+            transform: translateY(-34.5px);
+    position: absolute;
+  }
+  .bubble::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    border: 1rem solid transparent;
+    border-top-color: #fff;
+    border-right-color: #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
